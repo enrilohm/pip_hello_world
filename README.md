@@ -1,17 +1,16 @@
-# simple_arules
-Blunt implementation that yields the result of the apriori algorithm.
+# pip_hello_world
+simple pip installable hello-world-package
 
 ## Installation
 ```bash
-pip install git+https://github.com/enrilohm/simple_arules.git
+pip install git+https://github.com/enrilohm/pip_hello_world.git
 ```
 
 ## Usage
+```bash
+pip_hello_world
+```
 ```python
-from simple_arules import frequent, apriori
-transactions = [["eggs", "bacon", "soup"],
-                ["eggs", "bacon", "apple"],
-                ["soup", "bacon", "banana"]]
-frequent(transactions, max_length=3, min_support=1)
-apriori(transactions, max_length=3, min_support=1, min_confidence=0.1)
+from pip_hello_world import hello_world
+hello_world()
 ```
