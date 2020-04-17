@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from os import path
 import re
 
-description="hello world pip package"
+description="pip_hello_world package"
 
 here = path.abspath(path.dirname(__file__))
 # package_name = re.sub(r".*/", "", here)
