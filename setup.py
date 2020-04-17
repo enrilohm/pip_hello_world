@@ -1,10 +1,14 @@
 from setuptools import setup, find_packages
 from os import path
 import re
+from os import listdir
+from os.path import isfile, join
 
 description="pip_hello_world package"
-
 here = path.abspath(path.dirname(__file__))
+scripts_dir= join(here,"scripts")
+scriptfiles = [join("scripts",f) for f in listdir(scripts_dir) if isfile(join(scripts_dir, f))]
+
 # package_name = re.sub(r".*/", "", here)
 package_name = "pip_hello_world"
 
@@ -23,7 +27,7 @@ setup(
     long_description_content_type='text/markdown',
     url=f"https://github.com/enrilohm/{package_name}",
     author='Enrico Lohmann',
-    scripts=["scripts/pip_hello_world"],
+    scripts=scriptfiles,
     author_email='enrilohm@gmail.com',
     python_requires='>=3.7',
     install_requires=requirements,
