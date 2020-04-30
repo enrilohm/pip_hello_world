@@ -32,4 +32,9 @@ setup(
     python_requires='>=3.7',
     install_requires=requirements,
     packages=["pip_hello_world"],
+    package_data={
+        package_name: [
+            "data/*"
+        ]
+    },
 )
