@@ -29,7 +29,7 @@ setup(
     author='Enrico Lohmann',
     scripts=scriptfiles,
     author_email='enrico.lohmann@protonmail.com',
-    python_requires='>=3.8',
+    python_requires='>=3.7',
     install_requires=requirements,
     packages=["pip_hello_world"],
     package_data={
