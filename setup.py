@@ -28,7 +28,7 @@ setup(
     url=f"https://github.com/enrilohm/{package_name}",
     author='Enrico Lohmann',
     scripts=scriptfiles,
-    author_email='enrilohm@gmail.com',
+    author_email='enrico.lohmann@protonmail.com',
     python_requires='>=3.7',
     install_requires=requirements,
     packages=["pip_hello_world"],
